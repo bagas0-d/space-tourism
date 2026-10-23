@@ -23,15 +23,15 @@ export default function Home() {
         
         {/* Hero Text */}
         <div className="max-w-md text-center lg:text-left flex flex-col gap-4 md:gap-6">
-          <span className="text-gray-300 text-base md:text-xl tracking-[2.7px] md:tracking-[3.38px] uppercase font-sans">
+          <span className="text-space-300 font-nav text-base md:text-xl tracking-nav uppercase">
             So, you want to travel to
           </span>
 
-          <h1 className="text-white text-[80px] md:text-[150px] font-serif uppercase leading-none">
+          <h1 className="text-white font-heading text-[80px] md:text-[150px] uppercase leading-none">
             Space
           </h1>
 
-          <p className="text-gray-300 text-sm md:text-base leading-relaxed font-sans">
+          <p className="text-space-300 font-body text-sm md:text-lg leading-relaxed">
             Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="flex items-center justify-center">
           <a
             href="/destination"
-            className="relative flex items-center justify-center w-36 h-36 md:w-60 md:h-60 bg-white text-[#0B0D17] font-serif text-lg md:text-2xl uppercase rounded-full transition-all duration-300 hover:ring-[40px] hover:ring-white/10 shadow-2xl"
+            className="relative flex items-center justify-center w-36 h-36 md:w-60 md:h-60 bg-white text-space-900 font-heading text-lg md:text-[32px] uppercase rounded-full transition-all duration-300 hover:ring-[40px] hover:ring-white/10 shadow-2xl"
           >
             Explore
           </a>

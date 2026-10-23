@@ -10,7 +10,7 @@ export default function Header() {
   }
 
   return (
-    <header className="absolute top-0 left-0 right-0 mx-auto w-full max-w-7xl flex items-center justify-between px-6 pt-6 md:px-10 md:pt-0 lg:pt-10 z-40">
+    <header className="absolute top-0 left-0 w-full flex items-center justify-between px-6 pt-6 md:px-10 md:pt-0 lg:pt-10 z-40">
       {/* Logo */}
       <div className="flex items-center lg:ml-12 shrink-0">
         <img
