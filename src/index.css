@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-space-900: #0b0d17;
+  --color-space-700: #1d2438;
+  --color-space-300: #d0d6f9;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-heading: "Bellefair", serif;
+  --font-body: "Barlow", sans-serif;
+  --font-nav: "Barlow Condensed", sans-serif;
+
+  /* Font sizes */
+  --text-heading-xl: 150px;
+  --text-heading-lg: 100px;
+  --text-heading-md: 56px;
+  --text-heading-sm: 32px;
+  --text-body: 18px;
+  --text-nav: 16px;
+
+  /* Letter spacing */
+  --tracking-nav: 2.7px;
+  --tracking-wide: 2px;
+
+  /* Layout */
+  --spacing-section: 48px;
+  --spacing-page-x: 8%;
+  --spacing-content-gap: 32px;
+
+  /* Border radius */
+  --radius-circle: 9999px;
+}
