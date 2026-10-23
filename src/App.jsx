@@ -1,22 +1,24 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/header/NavBar";
+import Header from "./components/header/Header";
+import Home from "./components/home/HomePage";
+import Destination from "./components/destination/Destination";
+import Crew from "./components/crew/Crew";
+import Technology from "./components/technology/Technology";
 
 export default function App() {
   return (
-    <div className="">
-      <BrowserRouter>
-        <Navbar />
+    <BrowserRouter>
+        <Header />
 
         <main>
           <Routes>
-            <Route />
-            <Route />
-            <Route />
-            <Route />
+            <Route path="/" element={<Home />} />
+            <Route path="/destination" element={<Destination />} />
+            <Route path="/crew" element={<Crew />} />
+            <Route path="/technology" element={<Technology />} />
           </Routes>
         </main>
-      </BrowserRouter>
-    </div>
+    </BrowserRouter>
   );
 }
