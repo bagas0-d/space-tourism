@@ -1,4 +1,6 @@
 import data from "../../data.json";
+import { publicAsset } from "../../utils/publicAsset";
+
 import TechnologyImage from "./TechnologyImage";
 import NumberPagination from "./NumberPagination";
 import TechnologyInfo from "./TechnologyInfo";
@@ -19,14 +21,14 @@ export default function Technology() {
       <picture className="absolute inset-0 -z-10 w-full h-full object-cover">
         <source
           media="(min-width: 1024px)"
-          srcSet="/technology/background-technology-desktop.jpg"
+          srcSet={publicAsset("/technology/background-technology-desktop.jpg")}
         />
         <source
           media="(min-width: 768px)"
-          srcSet="/technology/background-technology-tablet.jpg"
+          srcSet={publicAsset("/technology/background-technology-tablet.jpg")}
         />
         <img
-          src="/technology/background-technology-mobile.jpg"
+          src={publicAsset("/technology/background-technology-mobile.jpg")}
           alt=""
           className="w-full h-full object-cover"
         />
@@ -50,7 +52,7 @@ export default function Technology() {
 
           {/* Right: Image */}
           <div className="w-full lg:w-auto flex justify-end">
-            <TechnologyImage img={techData.images} name={techData.name} />
+            <TechnologyImage img={publicAsset(techData.images)} name={techData.name} />
           </div>
         </article>
       </div>

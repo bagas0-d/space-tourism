@@ -1,5 +1,6 @@
 import { useState } from "react";
 import data from "../../data.json";
+import { publicAsset } from "../../utils/publicAsset";
 
 import DestinationImage from "./DestinationImage";
 import TabList from "./TabList";
@@ -21,14 +22,14 @@ export default function Destination() {
       <picture className="absolute inset-0 -z-10 w-full h-full object-cover">
         <source
           media="(min-width: 1024px)"
-          srcSet="/destination/background-destination-desktop.jpg"
+          srcSet={publicAsset("/destination/background-destination-desktop.jpg")}
         />
         <source
           media="(min-width: 768px)"
-          srcSet="/destination/background-destination-tablet.jpg"
+          srcSet={publicAsset("/destination/background-destination-tablet.jpg")}
         />
         <img
-          src="/destination/background-destination-mobile.jpg"
+          src={publicAsset("/destination/background-destination-mobile.jpg")}
           alt=""
           className="w-full h-full object-cover"
         />
@@ -47,7 +48,7 @@ export default function Destination() {
           {/* Left: Image */}
           <div className="w-full flex justify-center lg:justify-start">
             <DestinationImage
-              img={destinationData.images.webp}
+              img={publicAsset(destinationData.images.webp)}
               name={destinationData.name}
             />
           </div>

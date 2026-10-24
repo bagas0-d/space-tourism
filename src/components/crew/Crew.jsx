@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import data from "../../data.json";
+import { publicAsset } from "../../utils/publicAsset";
 
 import CrewTitle from "./CrewTitle";
 import CrewInfo from "./CrewInfo";
@@ -41,14 +42,14 @@ export default function Crew() {
       <picture className="absolute inset-0 -z-10 w-full h-full object-cover">
         <source
           media="(min-width: 1024px)"
-          srcSet="/crew/background-crew-desktop.jpg"
+          srcSet={publicAsset("/crew/background-crew-desktop.jpg")}
         />
         <source
           media="(min-width: 768px)"
-          srcSet="/crew/background-crew-tablet.jpg"
+          srcSet={publicAsset("/crew/background-crew-tablet.jpg")}
         />
         <img
-          src="/crew/background-crew-mobile.jpg"
+          src={publicAsset("/crew/background-crew-mobile.jpg")}
           alt=""
           className="w-full h-full object-cover"
         />
@@ -101,7 +102,7 @@ export default function Crew() {
                   {/* Right Column: Image */}
                   <div className="w-full flex justify-center lg:justify-end items-end h-full">
                     <img
-                      src={member.images.webp}
+                      src={publicAsset(member.images.webp)}
                       alt={member.name}
                       className="max-h-[340px] md:max-h-[530px] lg:max-h-[600px] object-contain"
                     />

@@ -1,3 +1,5 @@
+import { publicAsset } from "../../utils/publicAsset";
+
 export default function NavMobileMenu({ isOpen, toggle }) {
   return (
     <button 
@@ -6,7 +8,7 @@ export default function NavMobileMenu({ isOpen, toggle }) {
       aria-label="Toggle menu"
     >
       <img
-        src={isOpen ? "/shared/icon-close.svg" : "/shared/icon-hamburger.svg"}
+        src={isOpen ? publicAsset("/shared/icon-close.svg") : publicAsset("/shared/icon-hamburger.svg")}
         alt=""
         className="w-6 h-6"
       />

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { publicAsset } from "../../utils/publicAsset";
 import NavLinks from "./NavLinks";
 import NavMobileMenu from "./NavMobileMenu";
 
@@ -14,7 +15,7 @@ export default function Header() {
       {/* Logo */}
       <div className="flex items-center lg:ml-12 shrink-0">
         <img
-          src="/shared/logo.svg"
+          src={publicAsset("/shared/logo.svg")}
           alt="Space tourism logo"
           className="w-10 h-10 md:w-12 md:h-12 "
         />
