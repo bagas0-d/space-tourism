@@ -8,7 +8,7 @@ import Technology from "./components/technology/Technology";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/space-tourism">
         <Header />
 
         <main>
