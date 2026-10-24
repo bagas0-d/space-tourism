@@ -52,7 +52,7 @@ export default function Technology() {
 
           {/* Right: Image */}
           <div className="w-full lg:w-auto flex justify-end">
-            <TechnologyImage img={publicAsset(techData.images)} name={techData.name} />
+            <TechnologyImage img={techData.images} name={techData.name} />
           </div>
         </article>
       </div>
