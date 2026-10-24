@@ -1,4 +1,5 @@
 import { publicAsset } from "../../utils/publicAsset";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -42,12 +43,12 @@ export default function Home() {
 
         {/* Explore Button */}
         <div className="flex items-center justify-center">
-          <a
-            href="/destination"
+          <NavLink
+            to="/destination"
             className="relative flex items-center justify-center w-36 h-36 md:w-60 md:h-60 bg-white text-space-900 font-heading text-lg md:text-[32px] uppercase rounded-full transition-all duration-300 hover:ring-[40px] hover:ring-white/10 shadow-2xl"
           >
             Explore
-          </a>
+          </NavLink>
         </div>
       </div>
     </section>
