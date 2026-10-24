@@ -38,7 +38,7 @@ export default function Destination() {
       <div className="max-w-7xl mx-auto w-full flex flex-col flex-grow justify-center">
         {/* Page Title */}
         <h2 className="text-white font-nav text-base md:text-xl lg:text-[28px] tracking-nav uppercase mb-8 md:mb-12 lg:mb-14 text-center md:text-left">
-          <span className="text-white/25 font-bold mr-4">{current + 1}</span>
+          <span className="text-white/25 font-bold mr-4">01</span>
           Pick your destination
         </h2>
 
